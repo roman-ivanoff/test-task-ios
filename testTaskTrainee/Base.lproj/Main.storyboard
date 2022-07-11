@@ -41,7 +41,20 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Smz-8o-S9s" secondAttribute="bottom" id="vgQ-49-gn1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Posts" id="LGm-yO-D90"/>
+                    <navigationItem key="navigationItem" title="Posts" id="LGm-yO-D90">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Sort by date" image="calendar" catalog="system" id="1Cr-2W-ulV">
+                                <connections>
+                                    <action selector="sortByDate:" destination="BYZ-38-t0r" id="lvQ-UW-k5I"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Sort by rating" image="arrow.down.heart.fill" catalog="system" id="Z0s-2H-ukD">
+                                <connections>
+                                    <action selector="sortByRating:" destination="BYZ-38-t0r" id="Vx3-tH-UzK"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Smz-8o-S9s" id="5Cv-UD-2gG"/>
                     </connections>
@@ -70,6 +83,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.down.heart.fill" catalog="system" width="128" height="109"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

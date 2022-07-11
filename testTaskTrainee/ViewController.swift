@@ -44,8 +44,16 @@ class ViewController: UIViewController {
             }
         }
     }
-
-
+    
+    @IBAction func sortByRating(_ sender: UIBarButtonItem) {
+        postList.sort(by: { $0.likesCount > $1.likesCount })
+        tableView.reloadData()
+    }
+    
+    @IBAction func sortByDate(_ sender: UIBarButtonItem) {
+        postList.sort(by: { $0.timeshamp > $1.timeshamp })
+        tableView.reloadData()
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
