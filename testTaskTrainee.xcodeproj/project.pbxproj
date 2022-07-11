@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD6CEC11287C1F35008A181D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CEC0F287C1F35008A181D /* PostTableViewCell.swift */; };
+		FD6CEC12287C1F35008A181D /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD6CEC10287C1F35008A181D /* PostTableViewCell.xib */; };
 		FDBD4EC6287B71F7000B1650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBD4EC5287B71F7000B1650 /* AppDelegate.swift */; };
 		FDBD4EC8287B71F7000B1650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBD4EC7287B71F7000B1650 /* SceneDelegate.swift */; };
 		FDBD4ECA287B71F7000B1650 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBD4EC9287B71F7000B1650 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD6CEC0F287C1F35008A181D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		FD6CEC10287C1F35008A181D /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		FDBD4EC2287B71F7000B1650 /* testTaskTrainee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testTaskTrainee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBD4EC5287B71F7000B1650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDBD4EC7287B71F7000B1650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD6CEC0C287C1DC4008A181D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FDBD4ECE287B71F9000B1650 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD6CEC0D287C1DD7008A181D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDBD4EC5287B71F7000B1650 /* AppDelegate.swift */,
+				FDBD4EC7287B71F7000B1650 /* SceneDelegate.swift */,
+				FDBD4ED0287B71F9000B1650 /* LaunchScreen.storyboard */,
+				FDBD4ED3287B71F9000B1650 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD6CEC0E287C1F1B008A181D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD6CEC0F287C1F35008A181D /* PostTableViewCell.swift */,
+				FD6CEC10287C1F35008A181D /* PostTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FDBD4EB9287B71F7000B1650 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +88,11 @@
 		FDBD4EC4287B71F7000B1650 /* testTaskTrainee */ = {
 			isa = PBXGroup;
 			children = (
-				FDBD4EC5287B71F7000B1650 /* AppDelegate.swift */,
-				FDBD4EC7287B71F7000B1650 /* SceneDelegate.swift */,
+				FD6CEC0E287C1F1B008A181D /* Views */,
+				FD6CEC0D287C1DD7008A181D /* Supporting Files */,
+				FD6CEC0C287C1DC4008A181D /* Resources */,
 				FDBD4EC9287B71F7000B1650 /* ViewController.swift */,
 				FDBD4ECB287B71F7000B1650 /* Main.storyboard */,
-				FDBD4ECE287B71F9000B1650 /* Assets.xcassets */,
-				FDBD4ED0287B71F9000B1650 /* LaunchScreen.storyboard */,
-				FDBD4ED3287B71F9000B1650 /* Info.plist */,
 			);
 			path = testTaskTrainee;
 			sourceTree = "<group>";
@@ -128,6 +158,7 @@
 				FDBD4ED2287B71F9000B1650 /* LaunchScreen.storyboard in Resources */,
 				FDBD4ECF287B71F9000B1650 /* Assets.xcassets in Resources */,
 				FDBD4ECD287B71F7000B1650 /* Main.storyboard in Resources */,
+				FD6CEC12287C1F35008A181D /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +172,7 @@
 				FDBD4ECA287B71F7000B1650 /* ViewController.swift in Sources */,
 				FDBD4EC6287B71F7000B1650 /* AppDelegate.swift in Sources */,
 				FDBD4EC8287B71F7000B1650 /* SceneDelegate.swift in Sources */,
+				FD6CEC11287C1F35008A181D /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = testTaskTrainee/Info.plist;
+				INFOPLIST_FILE = "testTaskTrainee/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = testTaskTrainee/Info.plist;
+				INFOPLIST_FILE = "testTaskTrainee/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
