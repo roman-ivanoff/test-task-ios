@@ -14,6 +14,7 @@
 		FD6CEC1A287C23F5008A181D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CEC19287C23F5008A181D /* Post.swift */; };
 		FD6CEC1D287C2468008A181D /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CEC1C287C2468008A181D /* PostsService.swift */; };
 		FD6CEC20287C24FB008A181D /* UILabel+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CEC1F287C24FB008A181D /* UILabel+Configuration.swift */; };
+		FD6CEC23287C2B87008A181D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CEC22287C2B87008A181D /* PostViewController.swift */; };
 		FDBD4EC6287B71F7000B1650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBD4EC5287B71F7000B1650 /* AppDelegate.swift */; };
 		FDBD4EC8287B71F7000B1650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBD4EC7287B71F7000B1650 /* SceneDelegate.swift */; };
 		FDBD4ECA287B71F7000B1650 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBD4EC9287B71F7000B1650 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		FD6CEC19287C23F5008A181D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FD6CEC1C287C2468008A181D /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
 		FD6CEC1F287C24FB008A181D /* UILabel+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Configuration.swift"; sourceTree = "<group>"; };
+		FD6CEC22287C2B87008A181D /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		FDBD4EC2287B71F7000B1650 /* testTaskTrainee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testTaskTrainee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBD4EC5287B71F7000B1650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDBD4EC7287B71F7000B1650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		FD6CEC21287C2B6A008A181D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDBD4EC9287B71F7000B1650 /* ViewController.swift */,
+				FD6CEC22287C2B87008A181D /* PostViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		FDBD4EB9287B71F7000B1650 = {
 			isa = PBXGroup;
 			children = (
@@ -124,13 +135,13 @@
 		FDBD4EC4287B71F7000B1650 /* testTaskTrainee */ = {
 			isa = PBXGroup;
 			children = (
+				FD6CEC21287C2B6A008A181D /* Controllers */,
 				FD6CEC1E287C24E9008A181D /* Extensions */,
 				FD6CEC1B287C2442008A181D /* Networking */,
 				FD6CEC13287C2385008A181D /* Models */,
 				FD6CEC0E287C1F1B008A181D /* Views */,
 				FD6CEC0D287C1DD7008A181D /* Supporting Files */,
 				FD6CEC0C287C1DC4008A181D /* Resources */,
-				FDBD4EC9287B71F7000B1650 /* ViewController.swift */,
 				FDBD4ECB287B71F7000B1650 /* Main.storyboard */,
 			);
 			path = testTaskTrainee;
@@ -212,6 +223,7 @@
 				FDBD4EC6287B71F7000B1650 /* AppDelegate.swift in Sources */,
 				FD6CEC15287C23AC008A181D /* PostItem.swift in Sources */,
 				FD6CEC18287C23D6008A181D /* PostItemListResponse.swift in Sources */,
+				FD6CEC23287C2B87008A181D /* PostViewController.swift in Sources */,
 				FDBD4EC8287B71F7000B1650 /* SceneDelegate.swift in Sources */,
 				FD6CEC1A287C23F5008A181D /* Post.swift in Sources */,
 				FD6CEC20287C24FB008A181D /* UILabel+Configuration.swift in Sources */,
