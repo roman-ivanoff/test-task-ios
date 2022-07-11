@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		FD6CEC11287C1F35008A181D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CEC0F287C1F35008A181D /* PostTableViewCell.swift */; };
 		FD6CEC12287C1F35008A181D /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD6CEC10287C1F35008A181D /* PostTableViewCell.xib */; };
+		FD6CEC15287C23AC008A181D /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CEC14287C23AC008A181D /* PostItem.swift */; };
+		FD6CEC18287C23D6008A181D /* PostItemListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CEC17287C23D6008A181D /* PostItemListResponse.swift */; };
+		FD6CEC1A287C23F5008A181D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CEC19287C23F5008A181D /* Post.swift */; };
 		FDBD4EC6287B71F7000B1650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBD4EC5287B71F7000B1650 /* AppDelegate.swift */; };
 		FDBD4EC8287B71F7000B1650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBD4EC7287B71F7000B1650 /* SceneDelegate.swift */; };
 		FDBD4ECA287B71F7000B1650 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBD4EC9287B71F7000B1650 /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		FD6CEC0F287C1F35008A181D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		FD6CEC10287C1F35008A181D /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		FD6CEC14287C23AC008A181D /* PostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
+		FD6CEC17287C23D6008A181D /* PostItemListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemListResponse.swift; sourceTree = "<group>"; };
+		FD6CEC19287C23F5008A181D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FDBD4EC2287B71F7000B1650 /* testTaskTrainee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testTaskTrainee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBD4EC5287B71F7000B1650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDBD4EC7287B71F7000B1650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		FD6CEC13287C2385008A181D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD6CEC14287C23AC008A181D /* PostItem.swift */,
+				FD6CEC17287C23D6008A181D /* PostItemListResponse.swift */,
+				FD6CEC19287C23F5008A181D /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FDBD4EB9287B71F7000B1650 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +104,7 @@
 		FDBD4EC4287B71F7000B1650 /* testTaskTrainee */ = {
 			isa = PBXGroup;
 			children = (
+				FD6CEC13287C2385008A181D /* Models */,
 				FD6CEC0E287C1F1B008A181D /* Views */,
 				FD6CEC0D287C1DD7008A181D /* Supporting Files */,
 				FD6CEC0C287C1DC4008A181D /* Resources */,
@@ -171,7 +188,10 @@
 			files = (
 				FDBD4ECA287B71F7000B1650 /* ViewController.swift in Sources */,
 				FDBD4EC6287B71F7000B1650 /* AppDelegate.swift in Sources */,
+				FD6CEC15287C23AC008A181D /* PostItem.swift in Sources */,
+				FD6CEC18287C23D6008A181D /* PostItemListResponse.swift in Sources */,
 				FDBD4EC8287B71F7000B1650 /* SceneDelegate.swift in Sources */,
+				FD6CEC1A287C23F5008A181D /* Post.swift in Sources */,
 				FD6CEC11287C1F35008A181D /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
