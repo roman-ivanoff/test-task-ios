@@ -12,6 +12,7 @@ class PostViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var postTextLabel: UILabel!
     @IBOutlet weak var daysLabel: UILabel!
+    @IBOutlet weak var heartImage: UIImageView!
     @IBOutlet weak var likesLabel: UILabel!
 
     let postService = PostService()
@@ -43,7 +44,6 @@ class PostViewController: UIViewController {
         }
 
         DispatchQueue.main.async {
-            self.title = post.title
             self.titleLabel.text = post.title
             self.postTextLabel.text = post.text
             self.postImage.load(url: URL(string: self.post!.postImage)!)
@@ -53,6 +53,7 @@ class PostViewController: UIViewController {
             self.daysLabel.text = "\(calendarDate.component(.day, from: date)) \(date.month) \(calendarDate.component(.year, from: date))"
 
             self.likesLabel.text = String(post.likesCount)
+            self.heartImage.isHidden = false
         }
 
     }
